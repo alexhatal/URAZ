@@ -1,0 +1,404 @@
+html{
+    font-size: 18px;
+    font-family:'Quicksand',Helvetica, Arial,sans-serif;
+    color: #2B005E;
+    line-height: 1.6;
+}
+
+body{
+    background-image: url(img/doctor-blur.jpg);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+/* NAVBAR */
+.navbar{
+    height: 30vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    float: right;
+    padding:0.7vw;
+    margin-right: 5vw; 
+    margin-top: 1vw;  
+}
+
+li a{
+    color: #2B005E;
+}
+
+li a:hover{
+    color: #f37800;
+}
+
+.logo{
+    float: left;
+    padding: 2.5vw;
+}
+
+.dropbtn {
+    color:#2B005E;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f37800;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color:#ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color:#ffffff}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: #f37800;
+  }
+
+/* NAVBAR END */
+
+/* HERO */
+
+.grid12-6{
+    position:relative;
+    margin: auto;
+    top: -15vh;
+    left: 3vw;
+  }
+
+  .grid12-6 .inner_box{
+    position:absolute;
+    background:rgba(255,255,255,0.7);
+    top:25%;
+    left:20%;
+    margin: auto;
+    padding:5vw;
+    text-align:center;
+    width: auto;
+  }
+
+  .grid12-6 .inner_box button{
+    background:#f37800;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:16px;
+    border:none;
+    border-radius: 50px;
+    padding:10px 30px;
+  }
+  button a{
+      color: #ffffff;
+  }
+
+/* HERO END*/
+
+/*BANNER*/
+.banner-container {
+    background-image: linear-gradient(60deg, #f39200 50%, #f37800 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    height: 40vh;
+    width: 100%;
+  }
+
+  .banner-item{
+      width: 30%;
+      text-align: center;
+      color: #ffffff;
+      font-size: 18px;
+      margin-top: 12vh;
+  }
+
+/*BANNER TWO*/
+
+  .banner-two-container {
+    background-image: linear-gradient(60deg, #f39200 50%, #f37800 50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    height: 60vh;
+  }
+
+  .banner-two-item{
+      width: 55%;
+      text-align: justify;
+      color: #ffffff;
+      font-size: 1em;
+      font-weight: lighter;
+        margin: auto;
+      line-height: 2vw;
+  }
+
+  #signature {
+      margin-left: 39.5vw;
+  }
+
+  #story-headline{
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .story-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/bannerbg.svg);
+    background-repeat: no-repeat;
+    height: fit-content;
+    margin-left: 8vw;
+  }
+
+  .story-item{
+    width: 20vw;
+    text-align: justify;
+    color: #2B005E;
+    align-items: stretch;
+  }
+
+
+  .story-item img{
+      width: 70%;
+      border-radius: 50%;
+      margin-top: 2vw;
+      margin-left: 3vw;
+  }
+
+  /*SECTION ONE*/
+
+.sec-container{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.sec-item{
+    width: 50%;
+      text-align: center;
+      margin-top: 10vh;
+}
+
+.sec-item p{
+font-size: 2vw;
+margin-right: 4vw;
+margin-top: 12vh;
+}
+
+.sec-item h1{
+    font-size: 2vw;
+    margin-right: 4vw;
+    text-transform: uppercase;
+    }
+
+/*SECTION TWO*/
+
+.section-two{
+    background-image: url(img/banner.svg);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.section-two h1{
+    text-transform: uppercase;
+}
+
+.section-two button{
+    background-color: #f37800;
+    width: 8vw;
+    height: 5vh;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 5em;
+}
+
+.section-two button a{
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+footer{
+width: 100%;
+background-image: linear-gradient(60deg, #f39200 50%, #f37800 50%);
+bottom: 0;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 3vh;
+    margin-left: 15vw;
+}
+
+.footer-item{
+    width: 30%;
+    text-align: start;
+    margin-top: 5vh;
+    color: #ffffff;
+}
+
+hr{
+    border: 1px solid #ffffff;
+    width: 80%;
+    opacity: 0.4;
+}
+
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: 15%;
+}
+
+.gdpr{
+    text-align: center;
+    color: #ffffff;
+}
+
+.download{
+    background-color: #ffffff;
+    width: 9vw;
+    height: 5vh;
+    border: none;
+    border-radius: 3vh;
+}
+.download a{
+    color: #2B005E;
+}
+
+.text{
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.copy{
+    color: #ffffff;
+    font-size: 14px;
+    padding-bottom: 1vh;
+    text-align: center;
+}
+
+/*FORM*/
+
+.form-heading{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.contact-form{
+  grid-column: 1;
+   width: 40vw;
+   height: 100vh;
+   background-image: linear-gradient(60deg, #f39200 50%, #f37800 50%);
+   margin: auto;
+   border: none;
+   border-radius: 50px;
+   top: -10vh;
+   box-shadow: -5px -5px 5px 5px #4c44634b;
+   
+}
+
+.info-container {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: stretch;
+ justify-content: center;
+}
+
+.info-item{
+   width: 30%;
+   text-align: center;
+   color: #ffffff;
+   font-size: 16px;
+   margin-top: 4vw;
+}
+
+.form {
+  margin: 4vw;
+}
+
+.form-group{
+  margin: 20px;
+}
+
+.form-control{
+  background-color: #ececec;
+  width: 20vw;
+  height: 4vh;
+  padding: 5px 25px;
+  border: none;
+  border-radius: 50px;
+  color: #2B005E;
+}
+
+.btn{
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: #2B005E;
+  margin-left: 1vw;
+}
+
+.btn:hover{
+  background-color: #f37800;
+  color: #ffffff;
+}
+
+.note{
+  text-align: center;
+  margin: 3vw;
+}
+
+
+.note-btn{
+  background-color: #2B005E;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-left: 1vw;
+}
+
+.note-btn:hover{
+  background-color: #f37800;
+  color: #ffffff;
+}

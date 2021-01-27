@@ -1,0 +1,113 @@
+html{
+    font-size: 16px;
+    font-family:'Quicksand',Helvetica, Arial,sans-serif;
+    color: #2B005E;
+    line-height: 1.6;
+}
+
+body{
+    margin: 0;
+    background-image: url(img/man.jpg);
+}
+
+/* NAVBAR */
+.navbar{
+    height: 10vh;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul, a{
+    text-decoration: none;
+}
+
+li{
+    display: inline;
+    float: right;
+    padding:0.7vw;
+    margin-right: 5vw; 
+    margin-top: 1vw;  
+}
+
+li a{
+    color: #2B005E;
+}
+
+li a:hover{
+    color: #f37800;
+}
+
+.logo{
+    float: left;
+    padding: 2.5vw;
+}
+
+.dropbtn {
+    color:#2B005E;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f37800;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color:#ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color:#ffffff}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    color: #f37800;
+  }
+
+  /* FORM */
+
+
+  .contact-form{
+     grid-column: 1;
+      width: 40vw;
+      height: 100vh;
+      background-image: linear-gradient(60deg, #f39200 50%, #f37800 50%);
+      margin: 5vw auto;
+      border: none;
+      border-radius: 50px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .info-item{
+      width: 30%;
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+      margin-top: 4vw;
+  }
