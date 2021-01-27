@@ -194,14 +194,22 @@ footer{
     
     .download{
         background-color: #ffffff;
-        width: 9vw;
-        height: 5vh;
+        width: 150px;
+        height: 50px;
         border: none;
-        border-radius: 3vh;
-    }
-    .download a{
+        border-radius: 50px;
+      }
+      .download a{
         color: #2B005E;
-    }
+      }
+
+      .download a:hover{
+        color: #ffffff;
+      }
+      
+      .download:hover{
+      background-color: #f37800;
+      }
     
     .text{
         font-family: 'Caveat', cursive;

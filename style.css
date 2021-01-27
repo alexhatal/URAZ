@@ -186,7 +186,7 @@ li a:hover{
 }
 
 #signature {
-    margin-left: 39.5vw;
+    margin-left: 38vw;
 }
 
 #story-headline{
@@ -266,7 +266,7 @@ margin-top: 7vh;
   text-transform: uppercase;
 }
 
-#dot{
+.dot{
   background-color: #f37800;
   width: 150px;
   height: 50px;
@@ -276,14 +276,15 @@ margin-top: 7vh;
   text-align: center;
 }
 
-#dot a{
+.dot a{
   text-transform: uppercase;
   color: #ffffff;
 }
 
-#dot:hover{
-  color:#2B005E;
+.dot:hover{
+  background-color:#2B005E;
 }
+
 
 /* FOOTER */
 footer{
@@ -329,14 +330,22 @@ hr{
 
 .download{
   background-color: #ffffff;
-  width: 9vw;
-  height: 5vh;
+  width: 150px;
+  height: 50px;
   border: none;
-  border-radius: 3vh;
+  border-radius: 50px;
 }
 .download a{
   color: #2B005E;
 }
+
+.download a:hover{
+    color: #ffffff;
+  }
+  
+  .download:hover{
+  background-color: #f37800;
+  }
 
 .text{
   font-family: 'Caveat', cursive;
@@ -404,23 +413,6 @@ border-radius: 50px;
 color: #2B005E;
 }
 
-.download{
-background-color: rgb(255, 255, 255);
-width: 150px;
-height: 50px;
-border: none;
-border-radius: 50px;
-margin-left: 1vw;
-}
-
-.download a{
-  color: #f37800;
-}
-
-.download:hover, a:hover{
-background-color: #f37800;
-color: #ffffff;
-}
 
 .note{
 text-align: center;
@@ -434,11 +426,30 @@ width: 150px;
 height: 50px;
 border: none;
 border-radius: 50px;
-color: #ffffff;
 margin-left: 1vw;
+}
+
+.note-btn a{
+  color: #ffffff;
 }
 
 .note-btn:hover{
 background-color: #f37800;
 color: #ffffff;
 }
+
+.btn-sub{
+  background-color: #ffffff;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  margin-left: 1vw;
+  color: #f37800;
+  }
+  
+  
+  .btn-sub:hover{
+    background-color: #2B005E;
+    }
+  
