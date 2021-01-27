@@ -216,5 +216,35 @@ footer{
         text-align: center;
     }
 
-      /* CONTACT */
+      /* GDPR */
+.gdpr-text{
+    width: 50%;
+    margin: 5vw auto;  
+}
+
+.gdpr-text h1{
+    text-align: start;
+}
     
+.gdpr-text p{
+    text-align: justify;
+}
+
+.gdpr-btn{
+    background-color: #2B005E;
+    width: 170px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    margin-left: 1vw;
+}
+
+.gdpr-btn a{
+    color: #ffffff;
+}
+      
+.gdpr-btn:hover{
+    background-color: #f37800;
+    color: #ffffff;    
+}
