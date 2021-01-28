@@ -536,7 +536,7 @@ width: 30%;
 
 main{
 background-size: 100%;
-height: 55vh;
+height: 60vh;
 width: 90%;
 top: -23px;
 left: 5%;
@@ -581,13 +581,13 @@ z-index: -1;
 .sec-item p{
   position: absolute;
   font-size: 14px;
-  top: -135px;
+  top: -120px;
 }
 
 .sec-item h1{
   position: absolute;
   font-size: 20px;
-  top: 20px;
+  top: 30px;
 }
 
 .section-two{
