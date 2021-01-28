@@ -12,7 +12,8 @@ body{
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: local;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* NAVBAR */
