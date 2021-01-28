@@ -4,12 +4,23 @@
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-/* NAVBAR */
-.logo{
-    width: 50px;
-  }
+  and (-webkit-min-device-pixel-ratio: 2){
+
+    /* NAVBAR */
+.logo img{
+width: 30%;
 }
+
+.main{
+  background-size: 100%;
+  height: 22vh;
+  width: 90%;
+  top: -23px;
+  left: 5%;
+}
+}
+
+
 
 /* Portrait */
 @media only screen 
