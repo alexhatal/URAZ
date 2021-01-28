@@ -47,23 +47,38 @@
     
     <body>
     <!-- NAVBAR START -->
-    <div class="navbar">
+   <!-- Nav Bar Start -->
+<div class="Navbar">
+    <div class="Navbar__Link Navbar__Link-brand">
         <a class="logo" href="index.html"><img src="img/logo.svg" width="100%" alt="logo"></a>
-        <ul>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="odskodneni.html">Odškodnění</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Úrazy</a>
-                <div class="dropdown-content">
-                    <a href="pracovniuraz.html">Pracovní úraz</a>
-                    <a href="urazdite.html">Úraz ve škole</a>
-                    <a href="nehody.html">Dopravní nehody</a>
-                </div>
-            </li>
-            <li><a href="onas.html">O nás</a></li>
-        </ul> 
-    </div>
-    <!-- NAVBAR END -->
+     </div>
+     <div class="Navbar__Link Navbar__Link-toggle">
+       <i class="fas fa-bars"></i>
+     </div>
+
+   <nav class="Navbar__Items Navbar__Items--right">
+     <div class="Navbar__Link">
+        <a href="onas.html">O nás</a></li>
+     </div>
+     <div class="Navbar__Link">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Úrazy</button>
+            <div id="mydropdown" class="dropdown-content">
+                <a href="pracovniuraz.html">Pracovní úraz</a>
+                <a href="urazdite.html">Úraz ve škole</a>
+                <a href="nehody.html">Dopravní nehody</a>
+            </div>
+        </div>
+     </div>
+     <div class="Navbar__Link">
+        <a href="odskodneni.html">Odškodnění</a>
+     </div>
+     <div class="Navbar__Link">
+        <a href="kontakt.html">Kontakt</a>
+     </div>
+   </nav>
+ </div>
+<!-- Nav Bar END -->
     
     <!-- HERO START -->
     <main>

@@ -10,7 +10,6 @@ body{
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: local;
-
 }
 
 .main-bg{
@@ -20,48 +19,55 @@ body{
 }
 
 /* NAVBAR START */
-.navbar{
-  height: 30vh;
+
+.Navbar {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;  
 }
 
-a{
+.Navbar__Link {
+    display: inline-block;
+  padding-right: 20px;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin: 100px 0 auto 45vw;
+}
+
+.Navbar__Items--right a{
   text-decoration: none;
-}
-
-li{
-  display: inline;
-  float: right;
-  padding:0.7vw;
-  margin-right: 5vw; 
-  margin-top: 1vw;  
-}
-
-li a{
   color: #2B005E;
+  padding: 0 30px;
 }
 
-li a:hover{
+.Navbar__Items--right a:hover{
   color: #f37800;
 }
 
+.Navbar__Link-toggle {
+  display: none;
+}
+
 .logo{
+    width: 120%;
   float: left;
   padding: 2.5vw;
-  width: 12%;
 }
 
 .dropbtn {
-  color:#2B005E;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
   position: relative;
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #2B005E;
+  font-size: 16px;
+  padding: 0 30px;
 }
+
 
 .dropdown-content {
   display: none;
@@ -70,6 +76,10 @@ li a:hover{
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+}
+
+.dropdown:hover .dropbtn {
+  color: #f37800;
 }
 
 .dropdown-content a {
@@ -90,7 +100,32 @@ li a:hover{
   color: #f37800;
 }
 
-/* NAVBAR END */
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+    
+.Navbar__Items {
+    display:none;
+  }
+    
+.Navbar__Items--right {
+    margin-left:0;
+  }
+    
+.Navbar__ToggleShow {
+    display: flex;
+  }
+    
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+   } 
+}
 
 /* HERO START*/
 
@@ -101,13 +136,12 @@ main {
   background-repeat: no-repeat;
   height: 76vh;
   width: 60%;
-  padding: 20px;
   overflow: auto;
   box-shadow: -2px -2px 5px 5px #2a005e25;
   border: none;
   border-radius: 20px;
-  top: -150px;
-  left: 20px;
+  top: -180px;
+  left: 20%;
 }
 
 .inner_box{
@@ -149,7 +183,6 @@ border-radius: 20px;
 }
 
 /* HERO END*/
-
 /*BANNER START*/
 
 .banner-container {
@@ -491,4 +524,3 @@ footer{
       background-color: #2B005E;
       }
     
-
