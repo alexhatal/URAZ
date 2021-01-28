@@ -1,18 +1,18 @@
-html{
-    font-size: 16px;
+body{
+    position: relative;
+    font-size: 18px;
     font-family:'Quicksand',Helvetica, Arial,sans-serif;
     color: #2B005E;
     line-height: 1.6;
-}
-
-body{
-    position: relative;
     margin: 0;
 }
 
 /* NAVBAR */
 .navbar{
-    height: 10vh;
+    height: 25vh;
+    background-image: url(../img/bann.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ul{
@@ -86,6 +86,17 @@ li a:hover{
 
 
 /* MAIN */
+
+.box-container, .addition{
+    width: 60%;
+    margin: 8vh auto;
+    text-align: justify;
+}
+
+.box-container p{
+  line-height: 1.6;
+}
+
 .inj-container {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +106,7 @@ li a:hover{
   }
 
   .inj-item{
+      min-width: 310px;
       width: 20%;
       text-align: center;
       color: #2B005E;
@@ -106,6 +118,7 @@ li a:hover{
   }
 
   .inj-items{
+    min-width: 310px;
     width: 60%;
     text-align: center;
     color: #2B005E;
@@ -129,16 +142,6 @@ li a:hover{
     text-align: justify;
     font-size: 0.8em;
 }
-
-  .box-container, .addition{
-      width: 60%;
-      margin: 8vh auto;
-      text-align: justify;
-  }
-
-  .box-container p{
-    line-height: 1.6;
-  }
 
   .addition p{
     font-weight: normal;
