@@ -144,7 +144,7 @@ body{
   }
 
   .inj-item{
-      min-width: 310px;
+      min-width: 220px;
       width: 20%;
       text-align: center;
       color: #2B005E;
@@ -156,7 +156,7 @@ body{
   }
 
   .inj-items{
-    min-width: 310px;
+    min-width: 220px;
     width: 60%;
     text-align: center;
     color: #2B005E;
@@ -212,6 +212,17 @@ footer{
         text-align: start;
         margin-top: 5vh;
         color: #ffffff;
+    }
+    .footer-item a{
+      display: block;
+      text-decoration: none;
+      color: #2B005E;
+      text-align: start;
+      font-weight: bolder;
+    }
+  
+    .footer-item a:hover{
+      color: #ffffff;
     }
     
     hr{
@@ -296,4 +307,124 @@ footer{
 .gdpr-btn:hover{
     background-color: #f37800;
     color: #ffffff;    
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2){
+  .logo{
+    width: 40%;
+    margin: 50px 70px;
+  }
+
+  .box{
+    min-width: 310px;
+    position: relative;
+    top: -70px;
+  }
+
+  .box-container{
+    width: 85vw;
+    justify-content: center;
+    margin: 0 22px; 
+    
+  }
+
+  .box-container h1{
+    font-size: 30px;
+    top: -100px;
+  }
+
+  .box-container h3{
+    font-size: 15px;
+  }
+
+  .box-container p{
+    font-size: 14px;
+}
+
+.inj, .inj-container{
+  margin: 0 auto;
+}
+
+.inj-container{
+  display: block;
+}
+.inj-item{
+  width: 75%;
+  height: 200px;
+  font-size: 14px;
+}
+
+.inj-item p {
+  width: 100%;
+}
+
+.inj-items{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.inj-items p{
+  font-size: 15px;
+}
+
+.addition{
+  padding: 0;
+  width: 85vw;
+  justify-content: center;
+  margin: 0 22px; 
+}
+
+.addition p{
+position: relative;
+font-size: 15px; 
+top: -50px;
+}
+
+.addition h2{
+  font-size: 15px;
+}
+
+
+footer{
+  width: 100%;
+  font-weight: lighter;
+ }
+ 
+ .footer-container{
+   margin: 20px auto;
+ }
+ 
+ .footer-item{
+   min-width: 310px;
+   text-align: center;
+   font-size: 15px;
+ }
+ 
+ .footer-item a{
+   text-align: center;
+ }
+ 
+ .gdpr p{
+   font-size: 15px;
+   padding: 0 30px;
+ }
+ .copy{
+   width: 80%;
+   font-size: 10px;
+   text-align: center;
+   margin: 0 auto;
+ }
+
+ .gdpr-text{
+   width:85%;
+   padding: 20px;
+   margin: 0 auto;
+   font-size: 15px;
+ }
 }
