@@ -369,7 +369,48 @@ and (max-device-width: 992px)  {
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 1200px) {
+and (min-device-width: 993px) 
+and (max-device-width: 1200px)  { 
+    .head-item img{
+        width: 35%;
+        margin-top: 5vh;
+    }
+    
+    .head-item h2{
+        font-size: 20px;
+    }
+    
+    .form{
+        width: 60vw;
+    }
+    
+    .contact-form{
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    
+    #text-fill{
+        border-radius: 50px;
+        width: 55vw;
+    }
+    
+    .form-control{
+        width: 50vw;
+    }
+    
+    #message{
+        width: 55vw;
+        height: 10vh;
+    }
+    
+    .btn, .back-btn{
+        width: 170px;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 1201px) {
     #text-fill{
         border-radius: 100px;
     }
@@ -377,4 +418,16 @@ and (min-device-width: 1200px) {
         width: 80vw;
         margin-bottom: 30px;
     }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+and (max-device-width: 1920px) {
+  .logo{
+    width: 120%;
+  }
+
+  .contact-form{
+    font-size: 24px;
+}
 }

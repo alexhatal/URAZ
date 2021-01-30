@@ -220,7 +220,7 @@ footer{
     .footer-item a{
       display: block;
       text-decoration: none;
-      color: #2B005E;
+      color: #ffffff;
       text-align: start;
       font-weight: bolder;
     }
@@ -706,5 +706,64 @@ and (min-device-width: 1200px) {
 
 }
 
+/* Portrait and Landscape */
+@media only screen 
+and (max-device-width: 1920px) {
+  .logo{
+    width: 120%;
+  }
+  
+  .Navbar{
+    height: 350px;
+    }
+    
+      .Navbar__Items--right{
+        padding-right: 50px;
+        margin: auto 10px auto 750px;
+      }
+    
+      .Navbar__Items--right a {
+       font-size: 24px;
+       padding: 0 40px;
+       font-weight: bolder;
+      }
+     .Navbar__Items--right button{
+       font-size: 24px;
+       padding: 0 40px;
+    } 
+    
+    .dropdown-content{
+      padding: 20px;
+    }
+    
+    .dropdown-content a{
+      font-size: 18px;
+      font-weight: normal;
+      padding: 10px;
+    }
 
+    .box-container, .addition{
+      width: 70vw;
+    }
+
+    footer{
+      font-weight: normal;
+    }
+    .footer-container{
+      margin-left: 8vw;
+      margin-top: 0;
+    }
+    
+    .footer-item{
+      font-size: 24px;
+    }
+    
+    .gdpr{
+      font-size: 24px;
+    }
+    
+    .copy{
+      font-size: 20px;
+    }
+}
 

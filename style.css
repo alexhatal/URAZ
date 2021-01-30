@@ -66,6 +66,8 @@ body{
   color: #2B005E;
   font-size: 16px;
   padding: 0 30px;
+  font-size: 16px;
+  font-family:'Quicksand',Helvetica, Arial,sans-serif;
 }
 
 
@@ -504,7 +506,6 @@ footer{
   border-radius: 50px;
   color: #2B005E;
   }
-  
   
   .note{
   text-align: center;
@@ -1199,21 +1200,21 @@ footer{
  and (min-device-width: 992px) 
  and (max-device-width: 1200px) {
   nav{
-    width: 600px;
+    width: 700px;
    }
   
    .Navbar__Items--right{
      padding-right: 50px;
-     margin: auto 20px auto 350px;
+     margin: auto 20px auto 300px;
    }
 
    .Navbar__Items--right a {
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 15px;
     font-weight: bolder;
    }
   .Navbar__Items--right button{
-    font-size: 14px;
+    font-size: 16px;
     padding: 0 15px;
     
  } 
@@ -1232,7 +1233,7 @@ footer{
 
 main{
   width: 80vw;
-  height: 85vh;
+  height: 59vh;
 }
 
 .banner-container{
@@ -1241,6 +1242,15 @@ main{
 
 .banner-item{
   width: 30vw;
+}
+
+.sec-item p{
+  margin-top: 50px;
+}
+
+.sec-item h1{
+  font-size: 30px;
+  margin-top: 25px;
 }
 
 .footer-item{
@@ -1262,9 +1272,17 @@ main{
   margin-left: 40vw;
 }
 
+.story-container {
+  width: 100vw;
+}
 
 .person-item{
-  width: 40vw;
+  width: 50vw;
+  margin: 0;
+}
+
+.person-item img{
+  margin-left: 9vw;
 }
 
 footer{
@@ -1293,13 +1311,267 @@ footer{
 .form-control{
   width: 50vw;
 }
-}
 
  }
 
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 1200px) {
+  .logo{
+    width: 120%;
+  }
+
+  .Navbar__Items--right{
+    padding-right: 50px;
+    margin: auto 10px auto 450px;
+  }
+
+  .Navbar__Items--right a {
+   font-size: 18px;
+   padding: 0 20px;
+   font-weight: bolder;
+  }
+ .Navbar__Items--right button{
+   font-size: 18px;
+   padding: 0 20px;
+} 
+
+  main{
+    height: 72vh;
+    top: -30px;
+    left: 10%;
+}
+
+.inner_box{
+  top: 18vh;
+  left: 1vw;
+}
+
+.banner-item{
+  width: 25vw;
+  margin: auto 50px;
+}
 
 
+/* Portrait and Landscape */
+@media only screen 
+and (max-device-width: 1920px) {
+  .logo{
+    width: 120%;
+  }
+.Navbar{
+height: 270px;
+}
 
+  .Navbar__Items--right{
+    padding-right: 50px;
+    margin: auto 10px auto 750px;
+  }
+
+  .Navbar__Items--right a {
+   font-size: 24px;
+   padding: 0 40px;
+   font-weight: bolder;
+  }
+ .Navbar__Items--right button{
+   font-size: 24px;
+   padding: 0 40px;
+} 
+
+.dropdown-content{
+  padding: 20px;
+}
+
+.dropdown-content a{
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px;
+}
+
+  main{
+    width: 75vw;
+    height: 40vw;
+    padding: 50px;
+    top: -40px;
+    left: 10%;
+    z-index: -1;
+}
+
+.inner_box{
+  width: 65vw;
+  height: 28vw;
+  top: 10vh;
+  left: 2vw;
+}
+
+.inner_box h1{
+  font-size: 55px;
+}
+
+.inner_box p{
+  font-size: 35px;
+  padding-top: 20px;
+  width: 60vw;
+  margin-left: 2vw;
+}
+
+.inner_box button {
+  width: 250px;
+  height: 70px;
+  font-size: 22px;
+}
+
+.inner_box button a{
+text-decoration: none;
+}
+
+.banner-container{
+  top: -50px;
+  height: 30vw;
+  padding: auto 300px;
+}
+
+.banner-item{
+  width: 25vw;
+  margin: auto 50px;
+  font-size: 26px;
+}
+
+.banner-item img{
+  width: 20%;
+}
+
+.section-two{
+  margin-top: 150px;
+}
+
+.section-two h2{
+  font-size: 40px;
+}
+
+.section-two h3{
+  font-size: 30px;
+}
+
+.section-two h1{
+  font-size: 60px;
+}
+
+.section-two p{
+  font-size: 26px;
+}
+
+.dot {
+  width: 280px;
+  height: 90px;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.download{
+  width: 240px;
+  height: 70px;
+  font-size: 22px;
+}
+
+.dot a, .download a{
+  text-decoration: none;
+}
+footer{
+  font-weight: normal;
+}
+.footer-container{
+  margin-left: 8vw;
+  margin-top: 0;
+}
+
+.footer-item{
+  font-size: 20px;
+}
+
+.gdpr{
+  font-size: 20px;
+}
+
+.copy{
+  font-size: 18px;
+}
+
+.banner-two-container{
+  height: fit-content;
+}
+.banner-two-item{
+  width: 70vw;
+  margin: 100px auto;
+}
+.banner-two-item p{
+  font-size: 26px;
+}
+#signature {
+  margin-left: 45vw;
+}
+
+#story-headline{
+  font-size: 70px;
+}
+
+.person-item h2{
+  font-size: 45px;
+}
+
+.person-item p{
+  font-size: 26px;
+}
+
+.person-item img{
+  margin-left: 180px;
+}
+
+.form-heading{
+  font-size: 80px;
+}
+
+.contact-form{
+  width: 60vw;
+  height: fit-content;
+}
+
+.info-item{
+  margin-top: 120px;
+  font-size: 26px;
+}
+
+.form, .form-control{
+  font-size: 26px;
+}
+
+.form-control{
+  width: 30vw;
+  height: 80px;
+  padding-left: 50px;
+}
+
+.btn-sub, .note-btn{
+  width: 250px;
+  height: 90px;
+  border: none;
+  font-size: 24px;
+}
+
+.form-check-input{
+  width: 35px;
+  height: 35px;
+}
+
+.note h1{
+  font-size: 45px;
+}
+
+.note p{
+  font-size: 26px;
+}
+
+}
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
@@ -1612,3 +1884,4 @@ and (min-resolution: 192dpi) {
 }
 
 
+}
