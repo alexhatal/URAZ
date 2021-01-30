@@ -108,7 +108,7 @@ h2{
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 320px) 
-and (max-device-width: 480px)
+and (max-device-width: 479px)
 and (-webkit-min-device-pixel-ratio: 2){
 .head-item img{
     width: 50%;
@@ -121,19 +121,24 @@ and (-webkit-min-device-pixel-ratio: 2){
     margin: auto;
     text-align: center;
 }
+.info-container{
+    margin: 30px auto;
+} 
 
 .contact-form{
-    min-width: 280px;
+    width: 90vw;
     margin-left: 0 auto;
 }
 .form{
+    width: 80vw;
     min-width: 270px;
-    margin: 35px 15px;
+    margin: 35px 20px 35px 40px;
     font-size: 14px;
 }
 
 #text-fill{
     border-radius: 25px;
+    width: 50vw
 }
 
 .form-control{
@@ -143,4 +148,233 @@ and (-webkit-min-device-pixel-ratio: 2){
 #message{
     width: 70vw;
 }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 480px) 
+and (max-device-width: 567px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .head-item img{
+        width: 50%;
+        margin-top: 20px;
+    }
+
+    .head-item h2{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .contact-form{
+        width: 80vw;
+    }
+    
+    .form-control{
+        width: 55vw;
+    }
+
+    .form{
+        margin: 30px;
+    }
+    
+    #message{
+        width: 63vw;
+    }
+
+    .btn, .back-btn{
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .info-container{
+        margin: 30px auto;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 568px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+.head-item img{
+    width: 40%;
+    margin-top: 5vh;
+}
+
+.head-item h2{
+    font-size: 24px;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.form{
+    width: 60vw;
+}
+
+.contact-form{
+    width: 80vw;
+    margin-bottom: 30px;
+}
+
+#text-fill{
+    border-radius: 50px;
+    width: 60vw;
+}
+
+.form-control{
+    width: 50vw;
+}
+
+#message{
+    width: 55vw;
+    height: 10vh;
+}
+
+.btn, .back-btn{
+    width: 150px;
+}
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 668px) 
+and (max-device-width: 736px)  { 
+    .head-item img{
+        width: 40%;
+        margin-top: 5vh;
+    }
+    
+    .head-item h2{
+        font-size: 20px;
+    }
+    
+    .form{
+        width: 60vw;
+    }
+    
+    .contact-form{
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    
+    #text-fill{
+        border-radius: 50px;
+        width: 55vw;
+    }
+    
+    .form-control{
+        width: 50vw;
+    }
+    
+    #message{
+        width: 55vw;
+        height: 10vh;
+    }
+    
+    .btn, .back-btn{
+        width: 150px;
+    }
+    
+}
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 737px) 
+and (max-device-width: 812px)  { 
+    .head-item img{
+        width: 35%;
+        margin-top: 5vh;
+    }
+    
+    .head-item h2{
+        font-size: 20px;
+    }
+    
+    .form{
+        width: 60vw;
+    }
+    
+    .contact-form{
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    
+    #text-fill{
+        border-radius: 50px;
+        width: 55vw;
+    }
+    
+    .form-control{
+        width: 50vw;
+    }
+    
+    #message{
+        width: 55vw;
+        height: 10vh;
+    }
+    
+    .btn, .back-btn{
+        width: 170px;
+    }
+
+}
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 813px) 
+and (max-device-width: 992px)  { 
+    .head-item img{
+        width: 35%;
+        margin-top: 5vh;
+    }
+    
+    .head-item h2{
+        font-size: 20px;
+    }
+    
+    .form{
+        width: 60vw;
+    }
+    
+    .contact-form{
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    
+    #text-fill{
+        border-radius: 50px;
+        width: 55vw;
+    }
+    
+    .form-control{
+        width: 50vw;
+    }
+    
+    #message{
+        width: 55vw;
+        height: 10vh;
+    }
+    
+    .btn, .back-btn{
+        width: 170px;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 1200px) {
+    #text-fill{
+        border-radius: 100px;
+    }
+    .contact-form{
+        width: 80vw;
+        margin-bottom: 30px;
+    }
 }

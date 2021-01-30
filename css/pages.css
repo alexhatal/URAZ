@@ -13,9 +13,6 @@ body{
 .Navbar {
   display: flex;
   font-family: 'Quicksand', sans-serif;  
-  background-image: url(../img/bann.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .Navbar__Link {
@@ -43,6 +40,12 @@ body{
 
 .Navbar__Link-toggle {
   display: none;
+}
+
+.Navbar__Items--right button{
+  font-family:'Quicksand',Helvetica, Arial,sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 .logo{
@@ -196,6 +199,7 @@ footer{
     width: 100%;
     background-image: linear-gradient(60deg, #f39200 50%, #f37800 50%);
     bottom: 0;
+    font-size: 14px;
     }
     
     .footer-container{
@@ -271,7 +275,7 @@ footer{
     
     .copy{
         color: #ffffff;
-        font-size: 14px;
+        font-size: 12px;
         padding-bottom: 1vh;
         text-align: center;
     }
@@ -314,7 +318,7 @@ footer{
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 320px) 
-and (max-device-width: 480px)
+and (max-device-width: 479px)
 and (-webkit-min-device-pixel-ratio: 2){
   .logo{
     width: 40%;
@@ -428,3 +432,279 @@ footer{
    font-size: 15px;
  }
 }
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 480px) 
+and (max-device-width: 567px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  
+  .logo{
+    width: 40%;
+    margin: 80px 120px;
+  }
+  
+  .box-container{
+    width: 83vw;
+    margin: 0 40px;
+    min-height: 46vh;
+    top: -70px;
+  }
+
+  .inj-item{
+    width: 100vw;
+  }
+
+  .inj-item p{
+    font-size: 13px;
+  }
+
+  .inj-items{
+    width: 80vw;
+    margin: 30px 0;
+  }
+
+  .inj-items p{
+    font-size: 13px;
+    padding: 0 20px;
+  }
+
+  .addition{
+    width: 72vw;
+  }
+  .addition p {
+    width: 65vw;
+    margin: 0 20px;
+}
+
+.addition h2{
+  font-size: 25px;
+  margin-bottom: 75px;
+}
+
+footer{
+  width: 100vw;
+  padding-top: 20px;
+}
+.footer-container{
+  width: 80vw;
+}
+
+.footer-item{
+  width: 40vw;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.gdpr p{
+  text-align: center;
+}
+.copy{
+  width: 80%;
+  font-size: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+}
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 568px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+  .logo{
+    margin: 10vh 30vw 0 30vw;
+    width: 35%;
+  }
+
+  .box-container{
+    margin: 3vh auto;
+  }
+
+  .inj-container{
+    width: 100vw;
+  }
+
+  .inj-item{
+    width: 60vw;
+  }
+
+.addition h2{
+  font-size: 24px;
+}
+
+.footer-item{
+  width: 40vw;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.copy{
+  font-size: 12px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 668px) 
+and (max-device-width: 736px)  {
+  .logo{
+    width: 35%;
+  }
+
+  .box-container{
+    margin: 2vh auto;
+    width: 75%;
+  }
+
+  .addition{
+    width: 75%;
+  }
+
+  .addition h2{
+    font-size: 25px;
+  }
+
+footer{
+  font-weight: normal;
+  font-size: 16px;
+}
+.footer-item{
+  width: 40vw;
+}
+
+.copy{
+  width: 80vw;
+  font-size: 12px;
+  margin: 0 auto;
+}
+ }
+
+ /* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 737px) 
+and (max-device-width: 992px)  { 
+  .logo{
+    width: 25%;
+  }
+
+  .box-container, .addition{
+    width: 75vw;
+  }
+
+  .addition h2{
+    font-size: 25px;
+  }
+
+  .footer-item
+  {
+    width: 40vw;
+  }
+
+  .copy{
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+ /* Portrait and Landscape */
+ @media only screen 
+ and (min-device-width: 992px) 
+ and (max-device-width: 1200px) {
+   nav{
+    width: 600px;
+   }
+  .Navbar__Items--right{
+     padding-right: 50px;
+     margin: auto 20px auto 350px;
+   }
+
+   .Navbar__Items--right a {
+    font-size: 14px;
+    padding: 0 15px;
+    font-weight: bolder;
+   }
+  .Navbar__Items--right button{
+    font-size: 14px;
+    padding: 0 15px;
+    
+ } 
+
+ .logo{
+   width: 130%;
+ }
+
+ .dropdown-content {
+  padding: 10px;
+}
+
+.dropdown-content a,button {
+  padding: 10px;
+}
+
+.addition h2{
+  font-size: 35px;
+}
+
+.footer-item{
+  width: 20vw;
+}
+}
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 1200px) {
+  nav{
+    width: 800px;
+   }
+  .Navbar__Items--right{
+     margin: auto 20px auto 500px;
+   }
+
+   .Navbar__Items--right a {
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: bolder;
+   }
+  .Navbar__Items--right button{
+    font-size: 16px;
+    padding: 0 20px;
+    
+ } 
+
+ .logo{
+   width: 160%;
+ }
+
+ .dropdown-content {
+  padding: 15px;
+}
+.dropdown-content a,button {
+  padding: 10px;
+}
+
+.addition h2{
+  font-size: 35px;
+}
+
+.footer-item{
+  width: 20vw;
+}
+
+.box-container, .addition{
+  width: 83vw;
+}
+
+}
+
+
+

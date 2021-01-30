@@ -32,6 +32,12 @@ body{
   margin: 100px 0 auto 45vw;
 }
 
+.Navbar__Items--right button{
+  font-family:'Quicksand',Helvetica, Arial,sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
 .Navbar__Items--right a{
   text-decoration: none;
   color: #2B005E;
@@ -130,7 +136,6 @@ main {
   background-repeat: no-repeat;
   height: 76vh;
   width: 60%;
-  overflow: auto;
   box-shadow: -2px -2px 5px 5px #2a005e25;
   border: none;
   border-radius: 20px;
@@ -249,6 +254,7 @@ margin-top: 7vh;
 
 .section-two h1{
   text-transform: uppercase;
+  color: #f37800;
 }
 
 .dot{
@@ -300,12 +306,13 @@ footer{
     text-align: start;
     margin-top: 5vh;
     color: #ffffff;
+    font-size: 14px;
   }
 
   .footer-item a{
     display: block;
     text-decoration: none;
-    color: #2B005E;
+    color: #ffffff;
     text-align: start;
     font-weight: bolder;
   }
@@ -331,6 +338,7 @@ footer{
   .gdpr{
     text-align: center;
     color: #ffffff;
+    font-size: 14px;
   }
   
   .download{
@@ -360,7 +368,7 @@ footer{
   
   .copy{
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 1vh;
     text-align: center;
   }
@@ -389,7 +397,6 @@ footer{
     font-size: 1em;
     font-weight: lighter;
     margin: auto;
-    line-height: 2vw;
 }
 
 #signature {
@@ -406,6 +413,8 @@ footer{
 }
 
 .story-container{
+  display: flex;
+  flex-wrap: wrap;
   background-image: url(img/banner.svg);
   background-size: 85%;
   background-repeat: no-repeat;
@@ -426,6 +435,11 @@ footer{
 .story-container .story-item{
     display: inline-block;
     text-align: justify;
+}
+
+.person-container{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .person-item{
@@ -453,7 +467,7 @@ footer{
    border: none;
    border-radius: 50px;
    top: -10vh;
-   box-shadow: -5px -5px 5px 5px #4c44634b;
+   box-shadow: -5px -5px 15px 5px #4c44634b;
    
   }
   
@@ -540,7 +554,7 @@ footer{
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 320px) 
-and (max-device-width: 480px)
+and (max-device-width: 479px)
 and (-webkit-min-device-pixel-ratio: 2){
 
   /* NAVBAR */
@@ -652,11 +666,12 @@ footer{
   font-size: 15px;
   padding: 0 30px;
 }
-.copy{
+.copy p{
   width: 80%;
   font-size: 10px;
   text-align: center;
   margin: 0 auto;
+  font-weight: lighter;
 }
 
 /* O NAS */
@@ -720,329 +735,583 @@ footer{
 }
 }
 
-
-
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-
-}
-
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
+and (min-device-width: 480px) 
+and (max-device-width: 567px)
 and (-webkit-min-device-pixel-ratio: 2) {
+  .logo{
+    width: 35%;
+  }
+  
+  .inner_box {
+    top: 10vh;
+    margin:0 auto;
+    padding: 0px;
+    width: 85vw;
+    height: 60vh;
+    left: 2vw;
+  }
 
+  .inner_box h1, .inner_box p, .ineerbox button{
+    width: 75vw;
+    margin: 25px auto;
+  }
+
+  main{
+    top: 2vh;
+    width: 90vw;
+    height: 65vh;
+    left: 5%;
+    z-index: -1;
+  }
+  .banner-container{
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+  .banner-item{
+    width: 80vw;
+  }
+  .sec-item {
+    margin-top: 30px;
+    width: 80%;
+  }
+  .sec-item img {
+    width: 100%;
+}
+.sec-item h1{
+  margin: 10px 20px;
+  font-size: 30px;
 }
 
-/* Portrait */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+.sec-item p{
+  margin: 0;
+  font-size: 16px;
+}
+.banner-two-container{
+  width: 100vw;
+  height: 80vh;
+  margin: 50px auto;
 }
 
-/* Landscape */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
+.banner-two-container p{
+  font-size: 16px;
+  line-height: 1.6;
+  width: 70vw;
+  margin: -30px;
+}
 
+#signature{
+  padding-top: 40px;
+  margin-left: 10vw;
+  font-size: 14px;
+}
+
+.footer-item{
+  width: 40vw;
+  font-weight: normal;
+}
+
+.copy{
+  width: 80vw;
+  font-weight: normal;
+  margin: 0 auto;
+  font-size: 10px;
+}
+
+/* O NAS */
+.person-container{
+  width: 85vw;
+  margin: 0 0 0 15px;
+}
+
+.person-item img{
+  margin: 0 20vw;
+}
+
+/* FORM */
+.contact-form {
+  width: 85vw;
+}
+
+.form-heading {
+  font-size: 26px;
+}
+
+.info-item{
+  margin-top: 7vh;
+}
+
+.form-control{
+  width: 60vw;
+}
+.btn-sub{
+  margin-left: 4vw;
+}
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 375px) 
+and (min-device-width: 568px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
+.logo{
+  width: 40%;
+}
+main {
+  width: 80vw;
+  top: -5px;
+  left: 10%;
+}
+.inner_box {
+  width: 55vw;
+  margin: 0px;
+  top: 10%;
+  left: 20px;
+}
+
+.banner-item{
+  font-size: 14px;
+}
+
+.banner-item img{
+  width: 20%;
+}
+.sec-item{
+  margin-top: 7vw;
+}
+
+.sec-item h1 {
+  font-size: 20px;
+  margin-right: 5vw;
+}
+.sec-item p {
+  font-size: 14px;
+  margin-right: 5vw;
+  margin-top: 0;
+}
+
+.section-two{
+  margin-top: 5vw;
+}
+
+.section-two h2{
+  font-size: 22px;
+}
+
+.footer-item{
+  width: 40vw;
+}
+
+.banner-two-container{
+  height: 75vh;
+}
+
+.banner-two-item{
+  width: 70vw;
+}
+.banner-two-item p{
+  font-size: 16px;
+  line-height: 1.6;
+  width: 75vw;
+}
+
+#signature{
+  width: 70vw;
+  margin-left: 25vw;
+  font-size: 14px;
+}
+
+.person-text-item{
+  width: 85vw;
+  margin-left: 5vw;
+}
+
+.person-item{
+  width: 80vw;
+}
+
+.person-item img{
+  margin-left: 23vw;
+}
+footer{
+  font-weight: normal;
+}
 
 }
 
-/* Portrait */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) { 
 
-}
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) { 
-
-}
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
+and (min-device-width: 668px) 
+and (max-device-width: 736px)  { 
 
+.logo{
+  width: 30%;
 }
 
-/* Portrait */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
-
+main{
+  width: 80vw;
+  top: -12vh;
+  left: 0;
+  margin: 0 auto;
+  z-index: -1;
 }
 
-/* Landscape */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) { 
-
+.inner_box {
+  margin: 55px;
+  top: 10%;
+  left: 0;
+  padding: 50px;
 }
+
+.banner-container{
+  margin-top: -12vw;
+  height: 140vh;
+}
+
+.banner-item{
+  width: 60vw;
+}
+
+.banner-item img{
+  width: 15%;
+}
+
+.sec-item{
+  margin-top: 5vh;
+}
+
+.sec-item p{
+  font-size: 20px;
+  margin-top: 1vh;
+}
+
+.sec-item h1{
+  font-size: 25px;
+}
+
+.sec-item img{
+  width: 90%;
+}
+
+.section-two{
+  margin-top: 5vh;
+}
+
+.section-two h2{
+  font-size: 20px;
+}
+
+.footer-item{
+  width: 40vw;
+}
+
+.copy{
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.banner-two-container{
+  height: 100vh;
+}
+
+#signature{
+  width: 35vw;
+  margin-left: 20vw;
+  font-size: 16px;
+}
+
+.story-container{
+  width: 80vw;
+}
+ .person-item{
+  width: 80vw;
+  margin-left: 3vw;
+}
+
+.person-item img{
+  margin-left: 22vw;
+}
+footer{
+  font-weight: normal;
+}
+
+.form-heading{
+  font-size: 40px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.info-container{
+  margin-top: 20px;
+  width: 80vw;
+}
+
+.contact-form {
+  width: 80vw;
+}
+
+.info-item{
+  margin-top: 50px;
+}
+
+.form-control{
+  width: 50vw;
+}
+}
+
+ /* Portrait and Landscape */
+ @media only screen 
+ and (min-device-width: 737px) 
+ and (max-device-width: 992px)  { 
+  .logo{
+    width: 30%;
+  }
+  
+  main{
+    width: 80vw;
+    top: -8vh;
+    left: 0;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  
+  .inner_box {
+    margin: 55px;
+    top: 10%;
+    left: 0;
+    padding: 50px;
+  }
+  
+  .banner-container{
+    margin-top: -12vw;
+    height: 140vh;
+  }
+  
+  .banner-item{
+    width: 60vw;
+  }
+  
+  .banner-item img{
+    width: 15%;
+  }
+  
+  .sec-item{
+    margin-top: 5vh;
+  }
+  
+  .sec-item p{
+    font-size: 20px;
+    margin-top: 1vh;
+  }
+  
+  .sec-item h1{
+    font-size: 25px;
+  }
+  
+  .sec-item img{
+    width: 90%;
+  }
+  
+  .section-two{
+    margin-top: 5vh;
+  }
+  
+  .section-two h2{
+    font-size: 20px;
+  }
+  
+  .footer-item{
+    width: 40vw;
+  }
+  
+  .copy{
+    width: 80vw;
+    margin: 0 auto;
+  }
+  
+  .banner-two-container{
+    height: 680px;
+  }
+  
+  .banner-two-container p{
+    width: 60vw;
+    margin: 0 0 0 auto;
+    
+  }
+
+  #signature{
+    width: 40vw;
+    font-size: 16px;
+    margin-left: 21vw;
+    margin-top: 20px;
+  }
+  
+  .story-container{
+    width: 80vw;
+  }
+  .person-item{
+    width: 80vw;
+    margin: 0 20px;
+  }
+  
+  .person-item img{
+    margin-left: 22vw;
+  }
+  footer{
+    font-weight: normal;
+  }
+  
+  .form-heading{
+    font-size: 40px;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  
+  .info-container{
+    margin-top: 20px;
+    width: 80vw;
+  }
+  
+  .contact-form {
+    width: 80vw;
+  }
+  
+  .info-item{
+    margin-top: 50px;
+  }
+  
+  .form-control{
+    width: 50vw;
+  }
+  }
+  
+  /* Portrait and Landscape */
+ @media only screen 
+ and (min-device-width: 992px) 
+ and (max-device-width: 1200px) {
+  nav{
+    width: 600px;
+   }
+  
+   .Navbar__Items--right{
+     padding-right: 50px;
+     margin: auto 20px auto 350px;
+   }
+
+   .Navbar__Items--right a {
+    font-size: 14px;
+    padding: 0 15px;
+    font-weight: bolder;
+   }
+  .Navbar__Items--right button{
+    font-size: 14px;
+    padding: 0 15px;
+    
+ } 
+
+ .logo{
+   width: 130%;
+ }
+
+ .dropdown-content {
+  padding: 10px;
+}
+
+.dropdown-content a,button {
+  padding: 10px;
+}
+
+main{
+  width: 80vw;
+  height: 85vh;
+}
+
+.banner-container{
+  height: 50vh;
+}
+
+.banner-item{
+  width: 30vw;
+}
+
+.footer-item{
+  width: 20vw;
+}
+
+.banner-two-container{
+  height: 60vw;
+}
+.banner-two-item{
+  width: 90vh;
+}
+
+.banner-two-item p{
+  width: 70vw;
+}
+
+#signature{
+  margin-left: 40vw;
+}
+
+
+.person-item{
+  width: 40vw;
+}
+
+footer{
+  font-weight: normal;
+}
+
+.form-heading{
+  font-size: 40px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.info-container{
+  margin-top: 20px;
+  width: 80vw;
+}
+
+.contact-form {
+  width: 80vw;
+}
+
+.info-item{
+  margin-top: 50px;
+}
+
+.form-control{
+  width: 50vw;
+}
+}
+
+ }
+
+
+
 
 /* ----------- iPhone X ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 375px) 
+and (min-device-width: 737px) 
 and (max-device-width: 812px) 
 and (-webkit-min-device-pixel-ratio: 3) { 
 
 }
 
-/* Portrait */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
 
-}
 
-/* Landscape */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) { 
-
-}
-
-/* ----------- Galaxy S3 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 2) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 2) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Galaxy S6 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Google Pixel ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Google Pixel XL ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- HTC One ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) 
-and (orientation: landscape) {
-
-}
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 480px) 
-and (device-height: 800px) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 480px) 
-and (device-height: 800px)  
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 480px) 
-and (device-height: 800px) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait and Landscape */
 @media only screen 
@@ -1341,3 +1610,5 @@ and (max-device-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (min-resolution: 192dpi) { 
 }
+
+
