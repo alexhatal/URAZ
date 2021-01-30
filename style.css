@@ -12,6 +12,10 @@ body{
   background-attachment: local;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* NAVBAR START */
 
 .Navbar {
@@ -20,7 +24,7 @@ body{
 }
 
 .Navbar__Link {
-    display: inline-block;
+  display: inline-block;
   padding-right: 20px;
 }
 
@@ -290,6 +294,7 @@ footer{
   width: 100%;
   background-image: linear-gradient(60deg, #f39200 50%, #f37800 50%);
   bottom: 0;
+  font-weight: normal;
   }
 
  
@@ -328,6 +333,8 @@ footer{
     width: 80%;
     opacity: 0.4;
   }
+
+
   
   .footer-links{
     display: flex;
@@ -365,14 +372,16 @@ footer{
   .text{
     font-family: 'Caveat', cursive;
     text-align: center;
-    font-size: 2vw;
+    font-size: 13px;
   }
   
   .copy{
     color: #ffffff;
-    font-size: 12px;
+    font-size: 10px;
     padding-bottom: 1vh;
     text-align: center;
+    width: 80vw;
+    margin: 0 auto;
   }
 
   /* FOOTER END */
@@ -411,7 +420,7 @@ footer{
 
 #story-headline{
   text-align: center;
-  font-size: 3em;
+  font-size: 30px;
 }
 
 .story-container{
@@ -555,7 +564,7 @@ footer{
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 320px) 
-and (max-device-width: 479px)
+and (max-device-width: 480px)
 and (-webkit-min-device-pixel-ratio: 2){
 
   /* NAVBAR */
@@ -563,16 +572,16 @@ and (-webkit-min-device-pixel-ratio: 2){
 width: 30%;
 }
 
+
 /* HERO */
 main{
 background-size: 100%;
-height: 60vh;
+height: 480px;
 width: 90%;
 top: -23px;
 left: 5%;
 z-index: -1;
 }
-
 .inner_box {
   width: 90%;
   margin: auto;
@@ -588,6 +597,8 @@ z-index: -1;
 
 .inner_box p{
   font-size: 16px;
+  width: 70vw;
+  margin-left: 30px;
 }
 
 .inj-item{
@@ -720,7 +731,7 @@ footer{
   margin-top: 40px;
 }
 .info-item p{
-  font-size: 10px;
+  font-size: 12px;
 }
 .form-check-label,.invalid-feedback{
   font-size: 12px;
@@ -731,8 +742,11 @@ footer{
 }
 
 .note h1{
-  font-size: 30px;
+  font-size: 18px;
   min-width: 300px;
+}
+.note p{
+  font-size: 14px;
 }
 }
 
@@ -740,8 +754,8 @@ footer{
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 480px) 
-and (max-device-width: 567px)
+and (min-device-width: 481px) 
+and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) {
   .logo{
     width: 35%;
@@ -752,7 +766,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin:0 auto;
     padding: 0px;
     width: 85vw;
-    height: 60vh;
+    height: fit-content;
     left: 2vw;
   }
 
@@ -1355,7 +1369,7 @@ and (min-device-width: 1200px) {
 
 /* Portrait and Landscape */
 @media only screen 
-and (max-device-width: 1920px) {
+and (min-device-width: 1920px) {
   .logo{
     width: 120%;
   }

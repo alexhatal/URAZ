@@ -422,7 +422,7 @@ and (min-device-width: 1201px) {
 
 /* Portrait and Landscape */
 @media only screen 
-and (max-device-width: 1920px) {
+and (min-device-width: 1920px) {
   .logo{
     width: 120%;
   }
