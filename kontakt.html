@@ -70,33 +70,33 @@
         <form id="my-form" action="https://formspree.io/f/xaylkybz"method="POST">
             <div class="form-group row">
                 <div class="col-10">
-                  <input class="form-control" type="text" value="Jméno" id="example-text-input">
+                  <input class="form-control" type="text" value="Jméno" id="example-text-input" name="jmeno">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-10">
-                  <input class="form-control" type="text" value="Příjmení" id="example-search-input">
+                  <input class="form-control" type="text" value="Příjmení" id="example-search-input" name="prijmeni">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-10">
-                  <input class="form-control" type="email" value="jmeno@emial.com" id="example-email-input">
+                  <input class="form-control" type="email" value="jmeno@emial.com" id="example-email-input" name="mail">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-10">
-                  <input class="form-control" type="tel" value="Telefon (+420 123 456 789)" id="example-tel-input">
+                  <input class="form-control" type="tel" value="Telefon (+420 123 456 789)" id="example-tel-input" name="phone">
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-10">
-                  <input class="form-control" type="text" value="Vaše zpráva" id="example-text-input">
+                  <input class="form-control" type="text" value="Vaše zpráva" id="example-text-input" name="message">
                 </div>
               </div>
               
                 <div class="form-group">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <input class="form-check-input" name="form-check-label" type="checkbox" value="" id="invalidCheck" required>
                     <label class="form-check-label" for="invalidCheck">
                       Souhlasím s odesláním osobních údajů
                     </label>
@@ -105,7 +105,7 @@
                     </div>
                   </div>
                 </div>
-                <button class="btn-sub" type="submit">ODESLAT</button>
+                <button class="btn-sub" type="submit" name="submit">ODESLAT</button>
               </form>
               <div id="status"></div>
             </section>       
