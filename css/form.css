@@ -154,7 +154,7 @@ and (-webkit-min-device-pixel-ratio: 2){
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 480px) 
+and (min-device-width: 481px) 
 and (max-device-width: 567px)
 and (-webkit-min-device-pixel-ratio: 2) {
     .head-item img{
@@ -197,7 +197,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 568px) 
+and (min-device-width: 569px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
 .head-item img{
@@ -245,7 +245,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 668px) 
-and (max-device-width: 736px)  { 
+and (max-device-width: 768px)  { 
     .head-item img{
         width: 40%;
         margin-top: 5vh;
@@ -286,8 +286,8 @@ and (max-device-width: 736px)  {
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 737px) 
-and (max-device-width: 812px)  { 
+and (min-device-width: 769px) 
+and (max-device-width: 896px)  { 
     .head-item img{
         width: 35%;
         margin-top: 5vh;
@@ -328,7 +328,7 @@ and (max-device-width: 812px)  {
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 813px) 
+and (min-device-width: 897px) 
 and (max-device-width: 992px)  { 
     .head-item img{
         width: 35%;
@@ -410,24 +410,9 @@ and (max-device-width: 1200px)  {
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 1201px) {
-    #text-fill{
-        border-radius: 100px;
-    }
-    .contact-form{
-        width: 80vw;
-        margin-bottom: 30px;
-    }
-}
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 1920px) {
-  .logo{
-    width: 120%;
-  }
-
-  .contact-form{
-    font-size: 24px;
+and (min-device-width: 1281px) 
+and (max-device-width: 1536px) {
+.contact-form{
+    width: 60vw;
 }
 }

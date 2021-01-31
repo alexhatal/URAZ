@@ -397,7 +397,6 @@ footer{
   justify-content: center;
   align-items: stretch;
   height: 60vh;
-  top: -650px;
 }
 
 .banner-two-item{
@@ -805,6 +804,11 @@ and (-webkit-min-device-pixel-ratio: 2) {
   margin: 0;
   font-size: 16px;
 }
+
+.section-two {
+  margin-top: 5vh;
+}
+
 .banner-two-container{
   width: 100vw;
   height: 80vh;
@@ -822,6 +826,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
   padding-top: 40px;
   margin-left: 10vw;
   font-size: 14px;
+}
+
+.footer-container{
+  margin-left: 50px;
 }
 
 .footer-item{
@@ -871,22 +879,24 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 568px) 
+and (min-device-width: 569px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
 .logo{
-  width: 40%;
+  width: 30%;
 }
 main {
   width: 80vw;
   top: -5px;
   left: 10%;
+  height: 530px;
 }
 .inner_box {
   width: 55vw;
   margin: 0px;
   top: 10%;
   left: 20px;
+  height: 300px;
 }
 
 .banner-item{
@@ -932,7 +942,7 @@ main {
 .banner-two-item p{
   font-size: 16px;
   line-height: 1.6;
-  width: 75vw;
+  width: 70vw;
 }
 
 #signature{
@@ -942,7 +952,7 @@ main {
 }
 
 .person-text-item{
-  width: 85vw;
+  width: 75vw;
   margin-left: 5vw;
 }
 
@@ -957,6 +967,32 @@ footer{
   font-weight: normal;
 }
 
+.footer-container{
+  margin-left: 110px;
+}
+
+.form-heading{
+  font-size: 30px;
+}
+
+.contact-form{
+  width: 70vw;
+}
+
+.info-item{
+  margin-top: 8vh;
+}
+
+.form-control{
+  width: 50vw;
+}
+
+.note h1{
+  font-size: 30px;
+  width: 75vw;
+  margin: 0 auto;
+}
+
 }
 
 
@@ -966,29 +1002,33 @@ footer{
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 668px) 
-and (max-device-width: 736px)  { 
+and (max-device-width: 768px)  { 
+
 
 .logo{
-  width: 30%;
+  width: 25%;
 }
 
 main{
   width: 80vw;
-  top: -12vh;
-  left: 0;
+  top: -10vh;
   margin: 0 auto;
   z-index: -1;
+  left: -5px;
+  height: 600px;
 }
 
 .inner_box {
-  margin: 55px;
-  top: 10%;
+  width: 50vw;
+  margin: 0 50px;
+  top: 25%;
   left: 0;
-  padding: 50px;
+  padding: 20px 50px;
+  height: 350px;
 }
 
 .banner-container{
-  margin-top: -12vw;
+  margin-top: -8vh;
   height: 140vh;
 }
 
@@ -1035,7 +1075,15 @@ main{
 }
 
 .banner-two-container{
-  height: 100vh;
+  height: 80vh;
+}
+
+.banner-two-item{
+  width: 70vw;
+}
+
+.banner-two-item p{
+  margin-right: 10px;
 }
 
 #signature{
@@ -1048,8 +1096,12 @@ main{
   width: 80vw;
 }
  .person-item{
-  width: 80vw;
+  width: 100vw;
   margin-left: 3vw;
+}
+
+.person-item p{
+  width: 80vw;
 }
 
 .person-item img{
@@ -1057,6 +1109,7 @@ main{
 }
 footer{
   font-weight: normal;
+  margin: 0 auto;
 }
 
 .form-heading{
@@ -1085,42 +1138,67 @@ footer{
 
  /* Portrait and Landscape */
  @media only screen 
- and (min-device-width: 737px) 
- and (max-device-width: 992px)  { 
+ and (min-device-width: 769px) 
+ and (max-device-width: 896px)  {
+   
+  
+  .Navbar__Items--right{
+    font-size: 16px;
+    width: 600px;
+    margin: 50px 20px 0 60px;
+  }
+
+  .Navbar__Items--right button{
+    font-size: 16px;
+    font-weight: normal; 
+    padding: 0 15px;
+  }
+
+  .Navbar__Items--right a{
+    padding: 0 15px;
+  }
+
   .logo{
-    width: 30%;
+    width: 170px;
   }
   
   main{
     width: 80vw;
-    top: -8vh;
+    top: -13vh;
     left: 0;
     margin: 0 auto;
     z-index: -1;
+    height: 500px;
   }
   
   .inner_box {
-    margin: 55px;
+    margin: 30px;
     top: 10%;
     left: 0;
-    padding: 50px;
+    padding: 40px;
   }
   
   .banner-container{
-    margin-top: -12vw;
-    height: 140vh;
+    margin-top: -15vw;
+    height: 350px;
   }
   
   .banner-item{
-    width: 60vw;
+    width: 30vw;
+    margin-top: 5vh;
+    height: 30vh;
   }
   
   .banner-item img{
     width: 15%;
   }
+
+  .headline p{
+   width: 20vw;
+  }
   
   .sec-item{
-    margin-top: 5vh;
+    margin-top: 30px;
   }
   
   .sec-item p{
@@ -1151,6 +1229,7 @@ footer{
   .copy{
     width: 80vw;
     margin: 0 auto;
+    font-size: 12px;
   }
   
   .banner-two-container{
@@ -1171,20 +1250,21 @@ footer{
   }
   
   .story-container{
-    width: 80vw;
+    width: 100vw;
   }
   .person-item{
-    width: 80vw;
+    width: 40vw;
     margin: 0 20px;
   }
   
   .person-item img{
-    margin-left: 22vw;
+    margin-left: 7vw;
+    width: 60%;
   }
-  footer{
-    font-weight: normal;
+
+  .footer-container{
+    margin-left: 150px;
   }
-  
   .form-heading{
     font-size: 40px;
     width: 80vw;
@@ -1207,695 +1287,398 @@ footer{
   .form-control{
     width: 50vw;
   }
+
+  .note h1{
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 30px;
+  }
   }
   
-  /* Portrait and Landscape */
- @media only screen 
- and (min-device-width: 992px) 
- and (max-device-width: 1200px) {
-  nav{
-    width: 700px;
-   }
-  
-   .Navbar__Items--right{
-     padding-right: 50px;
-     margin: auto 20px auto 300px;
-   }
 
-   .Navbar__Items--right a {
-    font-size: 16px;
-    padding: 0 15px;
-    font-weight: bolder;
-   }
-  .Navbar__Items--right button{
-    font-size: 16px;
-    padding: 0 15px;
-    
- } 
-
- .logo{
-   width: 130%;
- }
-
- .dropdown-content {
-  padding: 10px;
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 897px) 
+and (max-device-width: 960px) { 
+body{
+  background-size: 112%;
 }
 
-.dropdown-content a,button {
-  padding: 10px;
+.Navbar__Items--right{
+  font-size: 1px;
+  width: 600px;
+  margin: 50px 30px 0 80px;
+}
+
+.Navbar__Items--right button{
+  font-size: 1px;
+  font-weight: normal; 
+  padding: 0 15px;
+}
+
+.Navbar__Items--right a{
+  padding: 0 15px;
+}
+
+.logo{
+  width: 200px;
 }
 
 main{
-  width: 80vw;
-  height: 59vh;
-}
-
-.banner-container{
-  height: 50vh;
-}
-
-.banner-item{
-  width: 30vw;
-}
-
-.sec-item p{
-  margin-top: 50px;
-}
-
-.sec-item h1{
-  font-size: 30px;
-  margin-top: 25px;
-}
-
-.footer-item{
-  width: 20vw;
-}
-
-.banner-two-container{
-  height: 60vw;
-}
-.banner-two-item{
-  width: 90vh;
-}
-
-.banner-two-item p{
-  width: 70vw;
-}
-
-#signature{
-  margin-left: 40vw;
-}
-
-.story-container {
-  width: 100vw;
-}
-
-.person-item{
-  width: 50vw;
-  margin: 0;
-}
-
-.person-item img{
-  margin-left: 9vw;
-}
-
-footer{
-  font-weight: normal;
-}
-
-.form-heading{
-  font-size: 40px;
-  width: 80vw;
-  margin: 0 auto;
-}
-
-.info-container{
-  margin-top: 20px;
-  width: 80vw;
-}
-
-.contact-form {
-  width: 80vw;
-}
-
-.info-item{
-  margin-top: 50px;
-}
-
-.form-control{
-  width: 50vw;
-}
-
- }
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 1200px) {
-  .logo{
-    width: 120%;
-  }
-
-  .Navbar__Items--right{
-    padding-right: 50px;
-    margin: auto 10px auto 450px;
-  }
-
-  .Navbar__Items--right a {
-   font-size: 18px;
-   padding: 0 20px;
-   font-weight: bolder;
-  }
- .Navbar__Items--right button{
-   font-size: 18px;
-   padding: 0 20px;
-} 
-
-  main{
-    height: 72vh;
-    top: -30px;
-    left: 10%;
+  width: 85vw;
+  z-index: -1;
+  top: -130px;
+  left: 7%;
+  height: 500px;
 }
 
 .inner_box{
-  top: 18vh;
-  left: 1vw;
-}
-
-.banner-item{
-  width: 25vw;
-  margin: auto 50px;
-}
-
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 1920px) {
-  .logo{
-    width: 120%;
-  }
-.Navbar{
-height: 270px;
-}
-
-  .Navbar__Items--right{
-    padding-right: 50px;
-    margin: auto 10px auto 750px;
-  }
-
-  .Navbar__Items--right a {
-   font-size: 24px;
-   padding: 0 40px;
-   font-weight: bolder;
-  }
- .Navbar__Items--right button{
-   font-size: 24px;
-   padding: 0 40px;
-} 
-
-.dropdown-content{
+  left: 0;
+  top: 40px;
+  height: 320px;
   padding: 20px;
 }
 
-.dropdown-content a{
-  font-size: 18px;
-  font-weight: normal;
-  padding: 10px;
-}
-
-  main{
-    width: 75vw;
-    height: 40vw;
-    padding: 50px;
-    top: -40px;
-    left: 10%;
-    z-index: -1;
-}
-
-.inner_box{
-  width: 65vw;
-  height: 28vw;
-  top: 10vh;
-  left: 2vw;
-}
-
-.inner_box h1{
-  font-size: 55px;
-}
-
-.inner_box p{
-  font-size: 35px;
-  padding-top: 20px;
-  width: 60vw;
-  margin-left: 2vw;
-}
-
-.inner_box button {
-  width: 250px;
-  height: 70px;
-  font-size: 22px;
-}
-
-.inner_box button a{
-text-decoration: none;
-}
-
 .banner-container{
-  top: -50px;
-  height: 30vw;
-  padding: auto 300px;
+  position: relative;
+  top: -100px;
 }
 
-.banner-item{
-  width: 25vw;
-  margin: auto 50px;
-  font-size: 26px;
+.sec-item{
+  margin-top: 2vh;
 }
 
-.banner-item img{
-  width: 20%;
-}
-
-.section-two{
-  margin-top: 150px;
-}
-
-.section-two h2{
-  font-size: 40px;
-}
-
-.section-two h3{
-  font-size: 30px;
-}
-
-.section-two h1{
-  font-size: 60px;
-}
-
-.section-two p{
-  font-size: 26px;
-}
-
-.dot {
-  width: 280px;
-  height: 90px;
-  font-size: 26px;
-  margin-top: 50px;
-}
-
-.download{
-  width: 240px;
-  height: 70px;
-  font-size: 22px;
-}
-
-.dot a, .download a{
-  text-decoration: none;
-}
-footer{
-  font-weight: normal;
-}
-.footer-container{
-  margin-left: 8vw;
-  margin-top: 0;
-}
-
-.footer-item{
-  font-size: 20px;
-}
-
-.gdpr{
-  font-size: 20px;
+.sec-item p{
+  margin-top: 5vh;
 }
 
 .copy{
-  font-size: 18px;
+  font-size: 12px;
 }
 
 .banner-two-container{
-  height: fit-content;
+  margin-top: -12vh;
 }
+
 .banner-two-item{
-  width: 70vw;
-  margin: 100px auto;
-}
-.banner-two-item p{
-  font-size: 26px;
-}
-#signature {
-  margin-left: 45vw;
+  width: 750px;
+  top: -20vh;
 }
 
-#story-headline{
-  font-size: 70px;
+.footer-container{
+  margin-left: 50px;
 }
-
-.person-item h2{
-  font-size: 45px;
-}
-
-.person-item p{
-  font-size: 26px;
-}
-
-.person-item img{
-  margin-left: 180px;
-}
-
-.form-heading{
-  font-size: 80px;
-}
+  .footer-item{
+width: 20vw;
+  }
 
 .contact-form{
   width: 60vw;
-  height: fit-content;
 }
 
 .info-item{
-  margin-top: 120px;
-  font-size: 26px;
-}
-
-.form, .form-control{
-  font-size: 26px;
+  margin-top: 70px;
 }
 
 .form-control{
-  width: 30vw;
-  height: 80px;
-  padding-left: 50px;
-}
-
-.btn-sub, .note-btn{
-  width: 250px;
-  height: 90px;
-  border: none;
-  font-size: 24px;
-}
-
-.form-check-input{
-  width: 35px;
-  height: 35px;
+  width: 35vw;
 }
 
 .note h1{
+  width: 60vw;
+  font-size: 30px;
+  margin: 0 auto;
+}
+}
+
+  /* Portrait and Landscape */
+ @media only screen 
+ and (min-device-width: 961px) 
+ and (max-device-width: 1280px) {
+  body{
+    background-size: 112%;
+  }
+  
+  .Navbar__Items--right{
+    font-size: 18px;
+    width: 700px;
+    margin: 50px 30px 0 150px;
+  }
+  
+  .Navbar__Items--right button{
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: normal;
+  }
+  
+  .Navbar__Items--right a{
+    padding: 0 20px;
+  }
+  
+  .logo{
+    width: 200px;
+  }
+  
+  main{
+    width: 85vw;
+    z-index: -1;
+    top: -130px;
+    left: 7%;
+    height: 55vw;
+  }
+  
+  .inner_box{
+    width: 60vw;
+    left: 8%;
+    top: 20%;
+    height: 320px;
+    padding: 20px;
+  }
+  
+  .banner-container{
+    position: relative;
+    top: -100px;
+  }
+  
+  .sec-item{
+    margin-top: 2vh;
+  }
+  
+  .sec-item p{
+    margin-top: 5vh;
+  }
+  
+
+  #story-headline{
+    font-size: 45px;
+  }
+
+  .person-item img{
+    width: 70%;
+    margin-left: 80px;
+  }
+  .copy{
+    font-size: 12px;
+  }
+  
+  .banner-two-container{
+    margin-top: -12vh;
+  }
+  
+  .banner-two-item{
+    width: 750px;
+    top: -20vh;
+  }
+  
+  .footer-container{
+    margin-left: 50px;
+  }
+    .footer-item{
+  width: 20vw;
+    }
+  
+  .contact-form{
+    width: 60vw;
+  }
+  
+  .info-item{
+    margin-top: 70px;
+  }
+  
+  .form-control{
+    width: 35vw;
+  }
+  
+  .note h1{
+    width: 60vw;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+ }
+
+ /* Portrait and Landscape */
+ @media only screen 
+ and (min-device-width: 1281px) 
+ and (max-device-width: 1536px) {
+  .Navbar__Items--right{
+    font-size: 18px;
+    width: 700px;
+    margin: 50px 30px 0 400px;
+  }
+  
+  .Navbar__Items--right button{
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: normal;
+  }
+  
+  .Navbar__Items--right a{
+    padding: 0 20px;
+  }
+  
+  .logo{
+    width: 200px;
+  }
+  
+  main{
+    width: 85vw;
+    z-index: -1;
+    top: -130px;
+    left: 7%;
+    height: 55vw;
+  }
+  
+  .inner_box{
+    width: 60vw;
+    left: 8%;
+    top: 20%;
+    height: 320px;
+    padding: 20px;
+  }
+  
+  .banner-container{
+    position: relative;
+    top: -100px;
+  }
+  
+  .sec-item{
+    margin-top: 2vh;
+  }
+  
+  .sec-item p{
+    margin-top: 5vh;
+  }
+  
+
+  #story-headline{
+    font-size: 45px;
+  }
+
+  .person-item img{
+    width: 70%;
+    margin-left: 80px;
+  }
+  .copy{
+    font-size: 14px;
+  }
+  
+  .banner-two-container{
+    margin-top: -12vh;
+  }
+  
+  .banner-two-item{
+    width: 750px;
+    top: -20vh;
+  }
+  
+  .footer-container{
+    margin-left: 50px;
+  }
+    .footer-item{
+  width: 20vw;
+  font-size: 16px;
+    }
+  
+  .contact-form{
+    width: 60vw;
+  }
+  
+  .info-item{
+    margin-top: 70px;
+  }
+  
+  .form-control{
+    width: 35vw;
+  }
+  
+  .note h1{
+    width: 60vw;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+ }
+
+ /* Portrait and Landscape */
+ @media only screen 
+ and (min-device-width: 1537px) 
+ and (max-device-width: 1980px) {
+.logo{
+  width: 250px;
+} 
+ 
+  .Navbar__Items--right{
+    font-size: 20px;
+    width: 900px;
+    margin:70px 0 0 550px;
+  }
+  
+  .Navbar__Items--right button{
+    font-size: 20px;
+    padding: 0 30px;
+    font-weight: normal;
+  }
+  
+  .Navbar__Items--right a{
+    padding: 0 30px;
+  }
+
+  main{
+    width: 85vw;
+    z-index: -1;
+    top: -170px;
+    left: 8%;
+    height: 54vw;
+  }
+
+  .inner_box h1{
+    width: 50vw;
+    font-size: 50px;
+  }
+
+  .inner_box p{
+    width: 50vw;
+    font-size: 25px;
+
+  }
+.banner-container{
+  height: 50vh;
+  margin-top: -20vh;
+}
+
+.banner-two-container{
+  margin-top: -20vh;
+}
+
+#story-headline{
+  font-size: 50px;
+}
+
+.person-item img{
+  margin-left: 10vw;
+}
+
+.section-two h1{
   font-size: 45px;
 }
 
-.note p{
-  font-size: 26px;
+.text h2{
+  font-size: 55px;
 }
 
-}
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 737px) 
-and (max-device-width: 812px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
-
+.footer-container{
+  margin-left: 10vw;
 }
 
-
-
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (-webkit-min-device-pixel-ratio: 1) {
-
+.footer-item{
+  font-size: 16px;
+}
+.gdpr p{
+  font-size: 16px;
 }
 
-/* Portrait */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1) {
-
+.copy{
+  font-size: 14px;
 }
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 834px) 
-and (max-device-width: 1112px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-and (min-device-width: 834px) 
-and (max-device-width: 834px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-and (min-device-width: 1112px) 
-and (max-device-width: 1112px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 1024px) 
-and (max-device-width: 1366px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-and (min-device-width: 1024px) 
-and (max-device-width: 1024px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-and (min-device-width: 1366px) 
-and (max-device-width: 1366px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* ----------- Galaxy Tab 2 ----------- */
-
-/* Portrait and Landscape */
-@media 
-(min-device-width: 800px) 
-and (max-device-width: 1280px) {
-
-}
-
-/* Portrait */
-@media 
-(max-device-width: 800px) 
-and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media 
-(max-device-width: 1280px) 
-and (orientation: landscape) { 
-
-}
-
-/* ----------- Galaxy Tab S ----------- */
-
-/* Portrait and Landscape */
-@media 
-(min-device-width: 800px) 
-and (max-device-width: 1280px)
-and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media 
-(max-device-width: 800px) 
-and (orientation: portrait)
-and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Landscape */
-@media 
-(max-device-width: 1280px) 
-and (orientation: landscape)
-and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* ----------- Nexus 7 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 601px) 
-and (device-height: 906px) 
-and (-webkit-min-device-pixel-ratio: 1.331) 
-and (-webkit-max-device-pixel-ratio: 1.332) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 601px) 
-and (device-height: 906px) 
-and (-webkit-min-device-pixel-ratio: 1.331) 
-and (-webkit-max-device-pixel-ratio: 1.332) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 601px) 
-and (device-height: 906px) 
-and (-webkit-min-device-pixel-ratio: 1.331) 
-and (-webkit-max-device-pixel-ratio: 1.332) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Nexus 9 ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-and (device-width: 1536px) 
-and (device-height: 2048px) 
-and (-webkit-min-device-pixel-ratio: 1.331) 
-and (-webkit-max-device-pixel-ratio: 1.332) {
-
-}
-
-/* Portrait */
-@media screen 
-and (device-width: 1536px) 
-and (device-height: 2048px) 
-and (-webkit-min-device-pixel-ratio: 1.331) 
-and (-webkit-max-device-pixel-ratio: 1.332) 
-and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-and (device-width: 1536px) 
-and (device-height: 2048px) 
-and (-webkit-min-device-pixel-ratio: 1.331) 
-and (-webkit-max-device-pixel-ratio: 1.332) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Kindle Fire HD 7" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 800px) 
-and (max-device-width: 1280px) 
-and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 800px) 
-and (max-device-width: 1280px) 
-and (-webkit-min-device-pixel-ratio: 1.5) 
-and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 800px) 
-and (max-device-width: 1280px) 
-and (-webkit-min-device-pixel-ratio: 1.5) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Kindle Fire HD 8.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1.5) 
-and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1.5) 
-and (orientation: landscape) {
-
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (min-resolution: 192dpi) { 
-}
-
-
 }

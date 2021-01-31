@@ -446,12 +446,12 @@ footer{
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 481px) 
-and (max-device-width: 567px)
+and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2) {
   
   .logo{
     width: 40%;
-    margin: 80px 120px;
+    margin: 60px 130px;
   }
   
   .box-container{
@@ -471,12 +471,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
 
   .inj-items{
     width: 80vw;
-    margin: 30px 0;
+    margin: 0;
+    padding: 50px;
   }
 
   .inj-items p{
     font-size: 13px;
-    padding: 0 20px;
+    padding: 20px 20px;
+    width: 70vw;
   }
 
   .addition{
@@ -498,6 +500,7 @@ footer{
 }
 .footer-container{
   width: 80vw;
+  margin-left: 17vw;
 }
 
 .footer-item{
@@ -506,8 +509,15 @@ footer{
   padding-top: 20px;
 }
 
-.gdpr p{
-  text-align: center;
+.gdpr-text{
+  margin: 0 50px 50px 50px;
+}
+.gdpr-text h1{
+width: 70vw;
+}
+
+.gdpr-text p{
+  width: 80vw;
 }
 .copy{
   width: 80%;
@@ -519,11 +529,11 @@ footer{
 
 /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 568px) 
+and (min-device-width: 569px) 
 and (max-device-width: 667px) 
 and (-webkit-min-device-pixel-ratio: 2) { 
   .logo{
-    margin: 10vh 30vw 0 30vw;
+    margin: 5vh 30vw 0 30vw;
     width: 35%;
   }
 
@@ -535,12 +545,21 @@ and (-webkit-min-device-pixel-ratio: 2) {
     width: 100vw;
   }
 
-  .inj-item{
-    width: 60vw;
+  .inj-item, .inj-items{
+    width: 85vw;
+  }
+
+  .inj-items p{
+    padding: 40px;
+    width: 70vw;
   }
 
 .addition h2{
   font-size: 24px;
+}
+
+.footer-container{
+  margin-left: 80px;
 }
 
 .footer-item{
@@ -555,7 +574,17 @@ and (-webkit-min-device-pixel-ratio: 2) {
   margin: 0 auto;
 }
 
+.gdpr-text{
+  margin: 0 50px 50px 50px;
+  width: 80vw;
+}
+.gdpr-text h1{
+width: 70vw;
+}
 
+.gdpr-text p{
+  width: 80vw;
+}
 
 }
 
@@ -564,14 +593,14 @@ and (-webkit-min-device-pixel-ratio: 2) {
 /* Portrait and Landscape */
 @media only screen 
 and (min-device-width: 668px) 
-and (max-device-width: 736px)  {
+and (max-device-width: 768px)  {
   .logo{
-    width: 35%;
+    width: 30%;
+    padding: 50px;
   }
 
-  .box-container{
-    margin: 2vh auto;
-    width: 75%;
+  .box-container, .addition{
+    margin: 0 auto;
   }
 
   .addition{
@@ -582,9 +611,27 @@ and (max-device-width: 736px)  {
     font-size: 25px;
   }
 
+  .inj-item, .inj-items{
+    width: 100vw;
+  }
+
+  .inj-items p{
+    padding: 40px;
+    width: 70vw;
+  }
+
+  .gdpr-text {
+    width: 80vw;
+    margin: 0 auto 50px auto;
+}
+
 footer{
   font-weight: normal;
   font-size: 16px;
+}
+
+.footer-container{
+  margin-left: 130px;
 }
 .footer-item{
   width: 40vw;
@@ -599,20 +646,63 @@ footer{
 
  /* Portrait and Landscape */
 @media only screen 
-and (min-device-width: 737px) 
-and (max-device-width: 992px)  { 
+and (min-device-width: 769px) 
+and (max-device-width: 896px) { 
+  .Navbar__Items--right{
+    font-size: 16px;
+    width: 600px;
+    margin: 60px 20px 0 140px;
+  }
+
+  .Navbar__Items--right button{
+    font-size: 16px;
+    font-weight: normal; 
+    padding: 0 15px;
+  }
+
+  .Navbar__Items--right a{
+    padding: 0 15px;
+  }
+
   .logo{
-    width: 25%;
+    width: 170px;
+    padding: 30px;
   }
 
   .box-container, .addition{
     width: 75vw;
   }
 
+.box-container p{
+  width: 75vw;
+}
+
+
+.inj-container{
+  width: 100vw;
+}
+
+.inj-item{
+  width: 35vw;
+}
+
+.inj-items{
+  width: 90vw;
+}
+
+.inj-items p{
+  width: 70vw;
+  padding-top: 20px;
+}
+
+
   .addition h2{
-    font-size: 25px;
+    font-size: 30px;
   }
 
+  .footer-container{
+    margin-left: 170px;
+  }
   .footer-item
   {
     width: 40vw;
@@ -621,157 +711,263 @@ and (max-device-width: 992px)  {
   .copy{
     width: 80vw;
     margin: 0 auto;
+    font-size: 12px;
+  }
+
+  .gdpr-text{
+    width: 70vw;
   }
 }
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 897px) 
+and (max-device-width: 960px) { 
+body{
+  background-size: 112%;
+}
+
+.Navbar__Items--right{
+  font-size: 16px;
+  width: 600px;
+  margin: 50px 30px 0 80px;
+}
+
+.Navbar__Items--right button{
+  font-size: 16px;
+  font-weight: normal; 
+  padding: 0 15px;
+}
+
+.Navbar__Items--right a{
+  padding: 0 15px;
+}
+
+.logo{
+  width: 200px;
+}
+
+  .box-container, .addition{
+    width: 75vw;
+  }
+
+  .addition h2{
+    font-size: 25px;
+  }
+.inj-container{
+  width: 100vw;
+}
+.inj-item {
+  width:35vw ;
+}
+
+.inj-items{
+  width: 80vw;
+}
+
+.inj-items p{
+  width: 65vw;
+  padding: 30px;
+}
+
+  .copy{
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+.footer-container{
+  margin-left: 50px;
+}
+  .footer-item{
+width: 20vw;
+  }
+
+  .gdpr-text{
+    width: 70vw;
+  }
+}
+
 
  /* Portrait and Landscape */
  @media only screen 
- and (min-device-width: 992px) 
- and (max-device-width: 1200px) {
-   nav{
-    width: 600px;
-   }
+ and (min-device-width: 961px) 
+ and (max-device-width: 1280px) {
   .Navbar__Items--right{
-     padding-right: 50px;
-     margin: auto 20px auto 350px;
-   }
-
-   .Navbar__Items--right a {
-    font-size: 14px;
-    padding: 0 15px;
-    font-weight: bolder;
-   }
-  .Navbar__Items--right button{
-    font-size: 14px;
-    padding: 0 15px;
-    
- } 
-
- .logo{
-   width: 130%;
- }
-
- .dropdown-content {
-  padding: 10px;
-}
-
-.dropdown-content a,button {
-  padding: 10px;
-}
-
-.addition h2{
-  font-size: 35px;
-}
-
-.footer-item{
-  width: 20vw;
-}
-}
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 1200px) {
-  nav{
-    width: 800px;
-   }
-  .Navbar__Items--right{
-     margin: auto 20px auto 500px;
-   }
-
-   .Navbar__Items--right a {
-    font-size: 16px;
-    padding: 0 20px;
-    font-weight: bolder;
-   }
-  .Navbar__Items--right button{
-    font-size: 16px;
-    padding: 0 20px;
-    
- } 
-
- .logo{
-   width: 160%;
- }
-
- .dropdown-content {
-  padding: 15px;
-}
-.dropdown-content a,button {
-  padding: 10px;
-}
-
-.addition h2{
-  font-size: 35px;
-}
-
-.footer-item{
-  width: 20vw;
-}
-
-.box-container, .addition{
-  width: 83vw;
-}
-
-}
-
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 1920px) {
-  .logo{
-    width: 120%;
+    font-size: 18px;
+    width: 700px;
+    margin: 50px 30px 0 150px;
   }
   
-  .Navbar{
-    height: 350px;
-    }
-    
-      .Navbar__Items--right{
-        padding-right: 50px;
-        margin: auto 10px auto 750px;
-      }
-    
-      .Navbar__Items--right a {
-       font-size: 24px;
-       padding: 0 40px;
-       font-weight: bolder;
-      }
-     .Navbar__Items--right button{
-       font-size: 24px;
-       padding: 0 40px;
-    } 
-    
-    .dropdown-content{
-      padding: 20px;
-    }
-    
-    .dropdown-content a{
-      font-size: 18px;
-      font-weight: normal;
-      padding: 10px;
+  .Navbar__Items--right button{
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: normal;
+  }
+  
+  .Navbar__Items--right a{
+    padding: 0 20px;
+  }
+  
+  .logo{
+    width: 200px;
+  }
+
+  .addition h2{
+    font-size: 35px;
+  }
+
+  .inj-item{
+    width: 35vw;
+  }
+
+  .inj-items{
+    width: 90vw;
+  }
+
+  .inj-items p{
+    width: 65vw;
+    padding: 20px;
+  }
+
+  .footer-container{
+    margin-left: 50px;
+  }
+  .footer-item{
+    width: 20vw;
+  }
+
+  .copy{
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  .gdpr-text{
+    width: 70vw;
+  }
+ }
+
+ /* Portrait and Landscape */
+ @media only screen 
+ and (min-device-width: 1281px) 
+ and (max-device-width: 1536px) {
+  .Navbar__Items--right{
+    font-size: 18px;
+    width: 700px;
+    margin: 80px 30px 0 400px;
+  }
+  
+  .Navbar__Items--right button{
+    font-size: 18px;
+    padding: 0 20px;
+    font-weight: normal;
+  }
+  
+  .Navbar__Items--right a{
+    padding: 0 20px;
+  }
+  
+  .logo{
+    width: 200px;
+  }
+
+  .footer-container{
+    margin-left: 80px;
+  }
+    .footer-item{
+  width: 20vw;
+  font-size: 16px;
     }
 
-    .box-container, .addition{
+    .addition h2{
+      font-size: 40px;
+    }
+
+    .inj-items{
       width: 70vw;
     }
 
-    footer{
-      font-weight: normal;
+    .inj-items p{
+      width: 55vw;
+      padding: 30px;
     }
-    .footer-container{
-      margin-left: 8vw;
-      margin-top: 0;
-    }
-    
-    .footer-item{
-      font-size: 24px;
-    }
-    
-    .gdpr{
-      font-size: 24px;
-    }
-    
-    .copy{
-      font-size: 20px;
+
+    .gdpr-text{
+      width: 70vw;
     }
 }
 
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 1537px) 
+and (max-device-width: 1980px) {
+  .logo{
+    width: 250px;
+  } 
+   
+    .Navbar__Items--right{
+      font-size: 20px;
+      width: 900px;
+      margin:70px 0 0 550px;
+    }
+    
+    .Navbar__Items--right button{
+      font-size: 20px;
+      padding: 0 30px;
+      font-weight: normal;
+    }
+    
+    .Navbar__Items--right a{
+      padding: 0 30px;
+    }
+
+    .footer-container{
+      margin-left: 10vw;
+    }
+
+    .footer-item{
+      width: 20vw;
+      font-size: 16px;
+    }
+
+    .copy{
+      margin: 0 auto;
+      font-size: 14px;
+    }
+
+    .box-container{
+      margin-left: 10vw;
+      margin-left: 15vw;
+  
+    }
+    .box-container, .addition{
+      width: 60vw;
+    }
+
+    .box-container p{
+      width: 70vw;
+      
+    }
+
+    .inj-item{
+      width: 20vw;
+    }
+
+    .inj-items{
+      width: 60vw;
+    }
+
+    .inj-items p{
+      width: 50vw;
+      padding: 30px;
+    }
+
+    .addition h2{
+      font-size: 45px;
+    }
+
+    .gdpr-text{
+      width: 65vw;
+      margin-top: 0;
+    }
+}
