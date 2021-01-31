@@ -20,7 +20,7 @@
     
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="img/favicon.ico">
     <!--End of Favicon-->
 </head>
 
@@ -32,7 +32,8 @@
 <div class="head-item"><h2>Stal se Vám úraz a potřebujete poradit?<br>Vyplňte krátky formulář a my se Vám ozveme</h2></div>
 <div class="contact-form">
     <div class="info-container">
-        <div class="form">
+      <form id="my-form" action="https://formspree.io/f/xaylkybz"method="POST"> 
+      <div class="form">
             <div class="form-group row">
                 <div class="col-10">
                     <label for="date">Uveďte prosím datum:</label>
@@ -135,27 +136,27 @@
                 </div>
                         <div class="form-group row">
                             <div class="col-10">
-                              <input class="form-control" type="text" value="Jméno" id="name">
+                              <input class="form-control" name="name" type="text" value="Jméno" id="name">
                             </div>
                           </div>
                           <div class="form-group row">
                             <div class="col-10">
-                              <input class="form-control" type="text" value="Příjmení" id="surname">
+                              <input class="form-control" name="surname" type="text" value="Příjmení" id="surname">
                             </div>
                           </div>
                           <div class="form-group row">
                             <div class="col-10">
-                              <input class="form-control" type="text" value="Adresa" id="address">
+                              <input class="form-control" name="address" type="text" value="Adresa" id="address">
                             </div>
                           </div>
                           <div class="form-group row">
                             <div class="col-10">
-                              <input class="form-control" type="email" value="jmeno@emial.com" id="email">
+                              <input class="form-control" name="email" type="email" value="jmeno@emial.com" id="email">
                             </div>
                           </div>
                           <div class="form-group row">
                             <div class="col-10">
-                              <input class="form-control" type="tel" value="Telefon (+420 123 456 789)" id="tel">
+                              <input class="form-control" name="phone" type="tel" value="Telefon (+420 123 456 789)" id="tel">
                             </div>
                           </div>
                           <div class="form-group row">
@@ -170,45 +171,27 @@
                 <div class="form-group">
                 <div class="col-10">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <input class="form-check-input" name="check" type="checkbox" value="" id="invalidCheck" required>
                     <label class="form-check-label" for="invalidCheck">
                       Souhlasím s odesláním osobních údajů
                     </label>
                     <div class="invalid-feedback">
                       Potvrďte souhlas s odesláním osobních údajů
                     </div>
-                    <button class="btn" type="submit">ODESLAT</button>
-                    <button class="back-btn"><a href="index.html"> << Zpět na stránky</a></button>
+                    <button class="btn" name="btn" type="submit">ODESLAT</button>
+                    <button class="back-btn" name="back-btn"><a href="index.html"> << Zpět na stránky</a></button>
                   </div>
                 </div>
                 </div>
             </div>
+            </form>
             </div>    
         </div>
 
 
         
 
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
+<script src="js/form.js"></script>
 
 </body>
 </html>
